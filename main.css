@@ -1,0 +1,132 @@
+*{
+    border: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#loading{
+    width: 200px;
+    height: 100px;
+    position:fixed;
+    border: 5px solid cyan;
+    border-left-color: purple;
+    border-top-color:blue;
+    -webkit-animation: rotate 1s;
+    animation: rotate 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes rotate{
+    0%{
+        border-radius: 0%;
+    }
+    25%{
+        border-radius: 25%;
+    }
+    50%{
+        border-radius: 50%;
+    }
+    75%{
+        border-radius: 75%
+    }
+    100%{
+    transform: rotate(360deg);
+    transition: 2s ease-out;
+    
+    }
+    
+}
+/* buttons */
+input{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+input:hover {
+    transition: 0.3s ease-out;
+    border-radius: 50%;
+  }
+  /* class for js */
+  body.dark-theme{
+    background-color: black;
+    color: white;
+}
+input.dark-theme{
+    background: white;
+}
+body.light-theme{
+    background-color: blanchedalmond;
+    color: black;
+}
+input.light-theme{
+    background: burlywood;
+}
+/* class for js */
+  @media (prefers-color-scheme: dark) {
+    /* Dark theme styles go here */
+    body{
+        background-color: black;
+        color: white;
+    }
+    input{
+        background: white;
+    }
+    body.light-theme{
+        background-color: blanchedalmond;
+        color: black;
+    }
+    input.light-theme{
+        background: burlywood;
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    /* Light theme styles go here */
+    body{
+        background-color: blanchedalmond;
+        color: black;
+    }
+    input{
+        background: burlywood;
+    }
+  }
+
+  .container{
+    position: fixed;
+    right: 0%;;
+  }
+  #toggle{
+    appearance: none;
+    position: relative;
+    width: 50px;
+    height:30px;
+    border-radius:25px;
+    background-color: aqua;
+    transition: background .3s;
+    outline: none;
+    cursor: pointer;
+  }
+  #toggle::after{
+    content:'';
+    position: absolute;
+    top:50%;
+    left:30%;
+    transform: translate(-50%, -50%); 
+    border-radius: 50%;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: white;
+    transition:left .3s;
+  }
+  #toggle:checked{
+    background-color:white;
+  }
+  #toggle:checked:after{
+    left:70%;
+    background-color: black;
+  }
