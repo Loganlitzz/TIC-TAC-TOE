@@ -11,7 +11,7 @@ body{
 #loading{
     width: 200px;
     height: 100px;
-    position:fixed;
+    position:absolute;
     border: 5px solid cyan;
     border-left-color: purple;
     border-top-color:blue;
