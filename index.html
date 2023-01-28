@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIC TAC TOE</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="main.css">
 </head>
@@ -21,21 +23,21 @@
     <div class="inputs">
     <br><br>
     <!-- input madness -->
-    <input type="text" id="b1" readonly>
-    <input type="text" id="b2" readonly>
-    <input type="text" id="b3" readonly>
+    <input type="text" id="b1" onclick="func3(); fun1()" readonly>
+    <input type="text" id="b2" onclick="func4(); fun1()" readonly>
+    <input type="text" id="b3" onclick="func5(); fun1()" readonly>
     <br><br>
-    <input type="text" id="b4" readonly>
-    <input type="text" id="b5" readonly>
-    <input type="text" id="b6" readonly>
+    <input type="text" id="b4" onclick="func6(); fun1()" readonly>
+    <input type="text" id="b5" onclick="func7(); fun1()" readonly>
+    <input type="text" id="b6" onclick="func8(); fun1()" readonly>
     <br><br>
-    <input type="text" id="b7" readonly>
-    <input type="text" id="b8" readonly>
-    <input type="text" id="b9" readonly>
+    <input type="text" id="b7" onclick="func9(); fun1()" readonly>
+    <input type="text" id="b8" onclick="func10(); fun1()" readonly>
+    <input type="text" id="b9" onclick="func11(); fun1()" readonly>
     </div>
-    <div id="result">result</div>
+    <div id="result">Result</div>
+    <button id="but" onclick="fun2()">Reset</button>
     <script src="validate.js"></script>
     <script src="themepref.js"></script>
 </body>
-
 </html>
