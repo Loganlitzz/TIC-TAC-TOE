@@ -1,5 +1,11 @@
 console.log("Js working");
-
+var doctitle=document.title;
+window.addEventListener("blur",()=>{
+	document.title="Awww :(";
+});
+window.addEventListener("focus",()=>{
+	document.title=doctitle;
+})
 
 function fun1() {
 	var b1, b2, b3, b4, b5, b6, b7, b8, b9;
