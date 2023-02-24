@@ -7,6 +7,20 @@ window.addEventListener("focus",()=>{
 	document.title=doctitle;
 })
 
+const button = document.getElementById("hap");
+button.addEventListener('click', () => {
+  // Check if the tapticEngine API is available
+  if (window.TapticEngine) {
+	console.log("clicked");
+    // Provide a "selection" feedback
+    window.TapticEngine.selection();
+  } else {
+    // The tapticEngine API is not available, provide a fallback experience
+    console.log('Haptic feedback not supported');
+  }
+});
+
+
 function fun1() {
 	var b1, b2, b3, b4, b5, b6, b7, b8, b9;
 	b1 = document.getElementById("b1").value;
