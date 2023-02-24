@@ -7,18 +7,18 @@ window.addEventListener("focus",()=>{
 	document.title=doctitle;
 })
 
-const button = document.getElementById("hap");
-button.addEventListener('click', () => {
-  // Check if the tapticEngine API is available
-  if (window.TapticEngine) {
-	console.log("clicked");
-    // Provide a "selection" feedback
-    window.TapticEngine.selection();
-  } else {
-    // The tapticEngine API is not available, provide a fallback experience
-    console.log('Haptic feedback not supported');
-  }
-});
+// const button = document.getElementById("hap");
+// button.addEventListener('click', () => {
+//   // Check if the tapticEngine API is available
+//   if (window.TapticEngine) {
+// 	console.log("clicked");
+//     // Provide a "selection" feedback
+//     window.TapticEngine.selection();
+//   } else {
+//     // The tapticEngine API is not available, provide a fallback experience
+//     console.log('Haptic feedback not supported');
+//   }
+// });
 
 
 function fun1() {
