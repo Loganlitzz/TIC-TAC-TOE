@@ -96,3 +96,9 @@ input:hover {
     border-radius: 10px;
     cursor: default;
   }
+
+  /* haptic button */
+
+  #hap{
+    margin-top: 10px;
+  }
