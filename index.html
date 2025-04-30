@@ -2,6 +2,7 @@
 <html lang="en">
     <span id="loading"></span>
 <head>
+    <meta name="google-adsense-account" content="ca-pub-5503507271239411">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="main.css">
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5503507271239411"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -50,6 +52,24 @@
         }
       }
       </script> -->
+    <div id="lightning-out"></div>
     <script src="validate.js"></script>
+    <script src="https://logandev-dev-ed.develop.my.site.com/lightning/lightning.out.js"></script>
+    <script>
+        $Lightning.use(
+            'c:lightningOutTest', // name of the Lightning Out app
+            function () { // callback after the framework and app load
+                $Lightning.createComponent(
+                    'c:lOutTest', // top-level component of the Lightning Out app
+                    {}, // attributes to set on the component
+                    'lightning-out', // DOM element ID where the component is inserted
+                    function (cmp) { // callback after the component loads
+                        console.log('The component was created.');
+                    }
+                );
+            },
+            'https://logandev-dev-ed.develop.my.site.com' // Experience Cloud site endpoint
+        );
+    </script>
 </body>
 </html>
